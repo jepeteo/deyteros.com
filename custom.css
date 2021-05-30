@@ -3,19 +3,119 @@
 
 /* Screen min-width: 1280px */
 @media all and (min-width:1280px) {
+    .home #primary,
+    .category-logotexnes #primary,
+    .category-xenoi #primary, 
+    .category-musica #primary,
+    .category-music #primary,
+    .category-genikes #primary,
+    .category-keimena #primary,
+    .category-classic #primary,
+    .category-stoixeia #primary,
+    .search #primary
+        { width:72%; margin:0 1% }
+    .home #secondary,
+    .category-logotexnes #secondary,
+    .category-xenoi #secondary, 
+    .category-musica #secondary,
+    .category-music #secondary,
+    .category-genikes #secondary,
+    .category-keimena #secondary,
+    .category-stoixeia #secondary,
+    .category-classic #secondary,
+    .search #secondary
+        { width:25%; }
     .lsideb
         { float:left !important; width:25%; margin-top:15px }
+    /* 3 articles per row */
+    .home article   
+        { display:inline-block; width:31%; box-shadow:0 0 2px #ddd; margin:1%; height: 32vh; } 
+    /* image thumbnails */
+    .home .np-article-thumb  
+        { height: 100px !important; width: 100px !important; float: none;} 
+    .home .np-article-thumb img  
+        { height:auto !important; width:auto !important; float: left;} 
 }
 
 /* Screen width between 1024 - 1279 px */
 @media all and (min-width:1024px) and (max-width:1279px) {
+    .home #primary,
+    .category-logotexnes #primary,
+    .category-xenoi #primary, 
+    .category-musica #primary,
+    .category-music #primary,
+    .category-genikes #primary,
+    .category-keimena #primary,
+    .category-stoixeia #primary,	
+    .category-astronomy #primary,
+    .category-classic #primary,	
+    .search #primary
+        {width:69%; }
+    .home #secondary,
+    .category-logotexnes #secondary,
+    .category-xenoi #secondary, 
+    .category-musica #secondary,
+    .category-music #secondary,
+    .category-genikes #secondary,
+    .category-keimena #secondary,
+    .category-stoixeia #secondary,
+    .category-astronomy #secondary,
+    .category-classic #secondary,
+    .search #secondary
+        { width:29%; }
+   
     .lsideb
         { display:none; width:25%; margin-top:15px; float:right; }
+    #site-navigation ul li a 
+    { padding: 0px 5px; font-size: 90%; }
+
+    /* image thumbnails */
+    .home .np-article-thumb  
+        { height: 100px !important; width: 100px !important; float: none;} 
+    .home .np-article-thumb img  
+        { height:auto !important; width:auto !important; float: left;} 
 }
 
 /* Screen width between 600 - 1023 px */
 @media all and (min-width:600px) and (max-width:1023px) {
+    .home #primary,
+    .category-logotexnes #primary,
+    .category-xenoi #primary, 
+    .category-musica #primary,
+    .category-music #primary,
+    .category-genikes #primary,	
+    .category-keimena #primary,
+    .category-stoixeia #primary,
+    .category-astronomy #primary,
+    .category-classic #primary,
+    .search #primary
+    	{ width:64%; }
+    .home #secondary,
+    .category-logotexnes #secondary,
+    .category-xenoi #secondary, 
+    .category-musica #secondary,
+    .category-music #secondary,
+    .category-genikes #secondary,
+    .category-keimena #secondary,
+    .category-stoixeia #secondary,
+    .category-astronomy #secondary,
+    .category-classic #secondary,
+    .search #secondary
+    	{ width:34%; }
 
+    /* Popular posts */
+    .wpp-list li 
+        { overflow: hidden; float: left; clear: none; width: 30%; margin: .5%; height: 50px; font-size: 12px; text-align: center; border: 1px dotted #9996; padding: 5px 2px; }
+    .popular-posts 
+        { clear:both; }	
+    #site-navigation ul li a 
+    { padding: 0px 5px; font-size: 90%; }    
+
+    /* image thumbnails */
+    .home .np-article-thumb  
+        { height: 100px !important; width: 100px !important; float: none;} 
+    .home .np-article-thumb img  
+        { height:auto !important; width:auto !important; float: left;} 
 }
 
 /* Screen width below 599px */
@@ -24,10 +124,29 @@
 	.relpost-block-single 
         { flex-basis: 48%; }
     .ul2020 li 
-        { max-width:31%;}
+        { max-width:31% !important;}
+    .wpp-list { margin-left:0; }
 
-    }
+    /* Popular Posts */
+    .wpp-list li 
+        { overflow: hidden; float: left; clear: none; width: 49%; margin: .5%; height: 61px; font-size: 12px; text-align: center; border: 1px dotted #9996; padding: 1px; }
+    .wpp-post-title 
+        { font-size: 12px; }
+    .popular-posts 
+        { clear:both; }	
+    #site-navigation ul li a 
+        { padding: 0px 5px; font-size: 90%; }
 
+    /* image thumbnails */
+    .home .np-article-thumb  
+        { height: 100px !important; width: 100px !important; float: none;} 
+    .home article   
+        { margin:1%;} 
+
+}
+
+/* Old Css 2020 */ 
+@media all and (max-width:1280px) {   } 
 
 
 /* Related Post thmbnails 6 items per row */
@@ -50,7 +169,7 @@
 /* New Index Categories layout */ 
 .ul2020 {  list-style-type:none;   display:flex;  margin:1%;  flex-wrap: wrap;   flex-direction: row; } 
 .ul2020>*{   flex: 1 1 100px; } 
-.ul2020 li {  text-align:center; margin:1%;  max-width:14.66%; } 
+.ul2020 li {  text-align:center; margin:1%;  max-width:10.5%; } 
 .ul2020 img {   box-shadow: 0 0 8px #0003;  margin-bottom: 10px;  transition:all 0.25s ease-in-out; } 
 .ul2020 img:hover {   box-shadow: 0 0 3px #0003;  transition:all 0.25s ease-in-out; } 
 
@@ -58,9 +177,6 @@
 /* Center Contents Related Post */  
 .relpost-block-container {  display:flex; justify-content:center; align-items:center;} 
 .relpost-block-single {   padding:0 10px;}  
-/* New Layout */ 
-@media all and (min-width:1281px) {   } 
-@media all and (max-width:1281px) {  }   
 /* Λογοτεχνες μικρότερο μέγεθος post */ 
 .single article.category-logotexnes, 
 .single article.category-musica, 
@@ -74,143 +190,17 @@
 .single article.category-syllogika { max-width:900px !important; margin:auto; }  
 /* Αφαίρεση βελάκι στη φωτογραφία */  
 .home .np-archive-post-content-wrapper:before   { border: 0 solid #fff; }  
-@media all and (max-width:1280px) {  #site-navigation ul li a {     padding: 0px 5px;     font-size: 90%; } } 
-@media all and (min-width:1280px) { .mt-container   { width:60%;  }   
-/* \\u03c6\\u03c9\\u03c4\\u03bf\\u03b3\\u03c1\\u03b1\\u03c6\\u03af\\u03b1 \\u03b4\\u03af\\u03c0\\u03bb\\u03b1 \\u03c3\\u03c4\\u03bf \\u03ba\\u03b5\\u03af\\u03bc\\u03b5\\u03bd\\u03bf */  
 .home #post-78695 { width:98%; height:auto;}  
 .home .b3 { margin:0; padding:4px; }  
-.home article   { display:inline-block; width:48%; float:left; box-shadow:0 0 4px #ddd; margin:1%; height: 32vh; } 
-.home .np-article-thumb   { height:12vh !important;   width:8vw !important;   float: none;} 
-.home .np-article-thumb img  { height:auto !important;   width:auto !important;   float: left;} 
 .home .np-archive-post-content-wrapper   { padding: 8px 4px 0 8px; float: left;   width: calc(100% - 0px);} 
 .np-archive-post-content-wrapper .entry-title {     font-size: 16px;     margin: 0;} 
 .home .entry-content  { margin-top: 0px; line-height:18px; font-size:14px; } 
 .np-archive-more .np-button  { width: 100%; text-align: center; margin-top:4px; box-shadow:0 0 5px #ddd; display:none;}  
 .np-archive-post-content-wrapper {  border-top:1px solid #eee;   box-shadow: 0 0 0 rgba(0, 0, 0, 1); }   
 .archive .np-archive-post-content-wrapper {  border:1px solid #eee !important; }    
-@media all and (min-width:1440px) {  .home article { height: 29vh; } }    
-/* \\u03c6\\u03c9\\u03c4\\u03bf\\u03b3\\u03c1\\u03b1\\u03c6\\u03af\\u03b1 \\u03b4\\u03af\\u03c0\\u03bb\\u03b1 \\u03c3\\u03c4\\u03bf \\u03ba\\u03b5\\u03af\\u03bc\\u03b5\\u03bd\\u03bf - Tablet  @media all and (max-width:1279px) and (min-width:500px) { .home article   { display:inline-block; width:100%} .home .np-article-thumb   { max-height:auto !important;   max-width:auto !important;   float: left;} .home .np-article-thumb img  { height:auto !important;   width:auto !important;   float: left;} .home .np-archive-post-content-wrapper   { padding: 0 4px 0 8px; float: left;   width: calc(100% - 120px);} .np-archive-post-content-wrapper .entry-title {     font-size: 16px;     margin: 0;} .home .entry-content  { margin-top: 0px; line-height:18px; font-size:14 px; } .np-archive-more .np-button  { width: 100%; text-align: center; margin-top:4px; box-shadow:0 0 5px #ddd; } */ }     /* \\u0394\\u03b7\\u03bc\\u03bf\\u03c6\\u03b9\\u03bb\\u03ae \\u03ac\\u03c1\\u03b8\\u03c1\\u03b1 \\u03bc\\u03b5\\u03b3\\u03b5\\u03b8\\u03bf\\u03c2 \\u03c4\\u03af\\u03c4\\u03bb\\u03bf\\u03c5 */ .wpp-post-title { font-size: 14px; } /* Google ads remove yellow background */ 
+
 ins.adsbygoogle { background: transparent !important; }  
 /* */  .np-logo-section-wrapper   { padding: 20px 0 0 0; }  
-
-
-/*main&sidebar */
-@media all and (min-width:1281px)
-{ 
-.home #primary,
-.category-logotexnes #primary,
-.category-xenoi #primary, 
-.category-musica #primary,
-.category-music #primary,
-.category-genikes #primary,
-.category-keimena #primary,
-.category-classic #primary,
-.category-stoixeia #primary,
-.search #primary
-	{width:72%; margin:0 1% }
-.home #secondary,
-.category-logotexnes #secondary,
-.category-xenoi #secondary, 
-.category-musica #secondary,
-.category-music #secondary,
-.category-genikes #secondary,
-.category-keimena #secondary,
-.category-stoixeia #secondary,
-.category-classic #secondary,
-.search #secondary
-	{width:25%; }
-}
-@media all and (min-width:1025px) and (max-width:1280px)
-{ 
-.home #primary,
-.category-logotexnes #primary,
-.category-xenoi #primary, 
-.category-musica #primary,
-.category-music #primary,
-.category-genikes #primary,
-.category-keimena #primary,
-.category-stoixeia #primary,	
-.category-astronomy #primary,
-.category-classic #primary,	
-.search #primary
-	{width:69%; }
-.home #secondary,
-.category-logotexnes #secondary,
-.category-xenoi #secondary, 
-.category-musica #secondary,
-.category-music #secondary,
-.category-genikes #secondary,
-.category-keimena #secondary,
-.category-stoixeia #secondary,
-.category-astronomy #secondary,
-.category-classic #secondary,
-.search #secondary
-	{width:29%; }
-}
-
-@media all and (min-width:769px) and (max-width:1024px)
-{ 
-.home #primary,
-.category-logotexnes #primary,
-.category-xenoi #primary, 
-.category-musica #primary,
-.category-music #primary,
-.category-genikes #primary,	
-.category-keimena #primary,
-.category-stoixeia #primary,
-.category-astronomy #primary,
-.category-classic #primary,
-.search #primary
-	{width:65%; }
-.home #secondary,
-.category-logotexnes #secondary,
-.category-xenoi #secondary, 
-.category-musica #secondary,
-.category-music #secondary,
-.category-genikes #secondary,
-.category-keimena #secondary,
-.category-stoixeia #secondary,
-.category-astronomy #secondary,
-.category-classic #secondary,
-.search #secondary
-	{width:35%; }
-}
-
-/* Δημοφιλη άρθρα small tablet */
-@media all and (max-width:768px) and (min-width:426px) {
-	
-.wpp-list li {
-    overflow: hidden;
-    float: left;
-    clear: none;
-    width: 30%;
-    margin: .5%;
-    height: 50px;
-    font-size: 12px;
-    text-align: center;
-    border: 1px dotted #9996;
-	  padding: 5px 2px; 
-	}
-	.popular-posts { clear:both; }	
-}
-@media all and (max-width:425px){
-
-	.wpp-list { margin-left:0; }
-	.wpp-list li {
-    overflow: hidden;
-    float: left;
-    clear: none;
-    width: 49%;
-    margin: .5%;
-    height: 61px;
-    font-size: 12px;
-    text-align: center;
-    border: 1px dotted #9996;
-	  padding: 1px; 
-	}
-	.wpp-post-title { font-size: 12px; }
-	.popular-posts { clear:both; }	
-}
 
 /* Search */
 .np-header-search-wrapper .search-form-main .search-submit {
@@ -244,7 +234,7 @@ div.pdfemb-viewer {  margin:auto !important; }
 .single .category-classic .np-article-thumb 
 { display:none;}
 
-.home .category-logotexnes .np-article-thumb, .home .category-xenoi .np-article-thumb  { max-width:120px; max-height:130px; overflow:hidden}
+.home .category-logotexnes .np-article-thumb, .home .category-xenoi .np-article-thumb  { max-width:120px; max-height:130px; overflow:hidden; }
 
 /* Διορθωση μεγέθους εικόνας στις κατηγορίες αρθρων */ 
 .archive .category-logotexnes .np-article-thumb, 
@@ -274,46 +264,29 @@ div.pdfemb-viewer {  margin:auto !important; }
 .index-2t, .index-2t p 
 	{display: contents; }
 
-/* Οχι Capitalize στο μενου */ 
-#site-navigation ul li a,
-h1.entry-title
-{ text-transform:initial;
-}
+/* Remove menu Capital letters */ 
+#site-navigation ul li a, h1.entry-title
+    { text-transform:initial; }
 
 /* Χρώματα στις κατηγορίες */
 /*** Ξένοι */
 .category-button.np-cat-2619 a
-{background:#00662c;}
+    { background:#00662c; }
 /*** Κείμενα */
 .category-button.np-cat-3059 a
-{background:#00448c;}
+    { background:#00448c; }
 /*** Λογοτέχνες */
 .category-button.np-cat-5 a
-{background:#00a9e0;}
+    { background:#00a9e0; }
 /*** Μουσική */
 .category-button.np-cat-12180 a
-{background:#11ad1e;}
+    { background:#11ad1e; }
 /*** Music */
 .category-button.np-cat-11874 a
-{background:#f47b23;}
+    { background:#f47b23; }
 /*** Astronomy */
 .category-button.np-cat-11880 a
-{background:#0a246e;}
+    { background:#0a246e; }
 /*** Genikes */
 .category-button.np-cat-12162 a
-{background:#004161;}
-
-
-
-
-
-/* Μην τα σβήσεις, κάνω κάτι τεστ. 
-.jetpack-video-wrapper { 
-	position:fixed;
-}
-
-.category-music div.entry-content p:first-of-type  {
-	margin-top:400px;
-}
-
-*/
+    { background:#004161; }
