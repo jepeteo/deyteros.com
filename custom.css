@@ -1,0 +1,319 @@
+/* Custom CSS by T. Mentis*/
+/**************************/
+
+/* Screen min-width: 1280px */
+@media all and (min-width:1280px) {
+    .lsideb
+        { float:left !important; width:25%; margin-top:15px }
+}
+
+/* Screen width between 1024 - 1279 px */
+@media all and (min-width:1024px) and (max-width:1279px) {
+    .lsideb
+        { display:none; width:25%; margin-top:15px; float:right; }
+}
+
+/* Screen width between 600 - 1023 px */
+@media all and (min-width:600px) and (max-width:1023px) {
+
+}
+
+/* Screen width below 599px */
+@media all and (max-width:599px) {
+    /* Related Post thmbnails 2 items per row for mobile*/
+	.relpost-block-single 
+        { flex-basis: 48%; }
+    .ul2020 li 
+        { max-width:31%;}
+
+    }
+
+
+
+/* Related Post thmbnails 6 items per row */
+.relpost-block-container 
+    { flex-wrap: wrap; }
+.relpost-block-single 
+    { flex-basis: 16%; }
+
+
+/* */
+.fmusic-thumb img 
+    {max-width: 140px;}
+
+.single article.category-keimena .entry-title,
+.single article.category-keimena .post-cats-list,
+.single article.category-keimena .entry-meta
+    { text-align:center; }
+
+.byline { display:none !important; } 
+/* New Index Categories layout */ 
+.ul2020 {  list-style-type:none;   display:flex;  margin:1%;  flex-wrap: wrap;   flex-direction: row; } 
+.ul2020>*{   flex: 1 1 100px; } 
+.ul2020 li {  text-align:center; margin:1%;  max-width:14.66%; } 
+.ul2020 img {   box-shadow: 0 0 8px #0003;  margin-bottom: 10px;  transition:all 0.25s ease-in-out; } 
+.ul2020 img:hover {   box-shadow: 0 0 3px #0003;  transition:all 0.25s ease-in-out; } 
+
+.entry-footer, .navigation { max-width:900px; margin:auto;}  
+/* Center Contents Related Post */  
+.relpost-block-container {  display:flex; justify-content:center; align-items:center;} 
+.relpost-block-single {   padding:0 10px;}  
+/* New Layout */ 
+@media all and (min-width:1281px) {   } 
+@media all and (max-width:1281px) {  }   
+/* Λογοτεχνες μικρότερο μέγεθος post */ 
+.single article.category-logotexnes, 
+.single article.category-musica, 
+.single article.category-music, 
+.single article.category-xenoi, 
+.single article.category-classic, 
+.single article.category-genikes, 
+.single article.category-keimena,
+.single article.category-stoixeia,
+.single article.category-astronomy, 
+.single article.category-syllogika { max-width:900px !important; margin:auto; }  
+/* Αφαίρεση βελάκι στη φωτογραφία */  
+.home .np-archive-post-content-wrapper:before   { border: 0 solid #fff; }  
+@media all and (max-width:1280px) {  #site-navigation ul li a {     padding: 0px 5px;     font-size: 90%; } } 
+@media all and (min-width:1280px) { .mt-container   { width:60%;  }   
+/* \\u03c6\\u03c9\\u03c4\\u03bf\\u03b3\\u03c1\\u03b1\\u03c6\\u03af\\u03b1 \\u03b4\\u03af\\u03c0\\u03bb\\u03b1 \\u03c3\\u03c4\\u03bf \\u03ba\\u03b5\\u03af\\u03bc\\u03b5\\u03bd\\u03bf */  
+.home #post-78695 { width:98%; height:auto;}  
+.home .b3 { margin:0; padding:4px; }  
+.home article   { display:inline-block; width:48%; float:left; box-shadow:0 0 4px #ddd; margin:1%; height: 32vh; } 
+.home .np-article-thumb   { height:12vh !important;   width:8vw !important;   float: none;} 
+.home .np-article-thumb img  { height:auto !important;   width:auto !important;   float: left;} 
+.home .np-archive-post-content-wrapper   { padding: 8px 4px 0 8px; float: left;   width: calc(100% - 0px);} 
+.np-archive-post-content-wrapper .entry-title {     font-size: 16px;     margin: 0;} 
+.home .entry-content  { margin-top: 0px; line-height:18px; font-size:14px; } 
+.np-archive-more .np-button  { width: 100%; text-align: center; margin-top:4px; box-shadow:0 0 5px #ddd; display:none;}  
+.np-archive-post-content-wrapper {  border-top:1px solid #eee;   box-shadow: 0 0 0 rgba(0, 0, 0, 1); }   
+.archive .np-archive-post-content-wrapper {  border:1px solid #eee !important; }    
+@media all and (min-width:1440px) {  .home article { height: 29vh; } }    
+/* \\u03c6\\u03c9\\u03c4\\u03bf\\u03b3\\u03c1\\u03b1\\u03c6\\u03af\\u03b1 \\u03b4\\u03af\\u03c0\\u03bb\\u03b1 \\u03c3\\u03c4\\u03bf \\u03ba\\u03b5\\u03af\\u03bc\\u03b5\\u03bd\\u03bf - Tablet  @media all and (max-width:1279px) and (min-width:500px) { .home article   { display:inline-block; width:100%} .home .np-article-thumb   { max-height:auto !important;   max-width:auto !important;   float: left;} .home .np-article-thumb img  { height:auto !important;   width:auto !important;   float: left;} .home .np-archive-post-content-wrapper   { padding: 0 4px 0 8px; float: left;   width: calc(100% - 120px);} .np-archive-post-content-wrapper .entry-title {     font-size: 16px;     margin: 0;} .home .entry-content  { margin-top: 0px; line-height:18px; font-size:14 px; } .np-archive-more .np-button  { width: 100%; text-align: center; margin-top:4px; box-shadow:0 0 5px #ddd; } */ }     /* \\u0394\\u03b7\\u03bc\\u03bf\\u03c6\\u03b9\\u03bb\\u03ae \\u03ac\\u03c1\\u03b8\\u03c1\\u03b1 \\u03bc\\u03b5\\u03b3\\u03b5\\u03b8\\u03bf\\u03c2 \\u03c4\\u03af\\u03c4\\u03bb\\u03bf\\u03c5 */ .wpp-post-title { font-size: 14px; } /* Google ads remove yellow background */ 
+ins.adsbygoogle { background: transparent !important; }  
+/* */  .np-logo-section-wrapper   { padding: 20px 0 0 0; }  
+
+
+/*main&sidebar */
+@media all and (min-width:1281px)
+{ 
+.home #primary,
+.category-logotexnes #primary,
+.category-xenoi #primary, 
+.category-musica #primary,
+.category-music #primary,
+.category-genikes #primary,
+.category-keimena #primary,
+.category-classic #primary,
+.category-stoixeia #primary,
+.search #primary
+	{width:72%; margin:0 1% }
+.home #secondary,
+.category-logotexnes #secondary,
+.category-xenoi #secondary, 
+.category-musica #secondary,
+.category-music #secondary,
+.category-genikes #secondary,
+.category-keimena #secondary,
+.category-stoixeia #secondary,
+.category-classic #secondary,
+.search #secondary
+	{width:25%; }
+}
+@media all and (min-width:1025px) and (max-width:1280px)
+{ 
+.home #primary,
+.category-logotexnes #primary,
+.category-xenoi #primary, 
+.category-musica #primary,
+.category-music #primary,
+.category-genikes #primary,
+.category-keimena #primary,
+.category-stoixeia #primary,	
+.category-astronomy #primary,
+.category-classic #primary,	
+.search #primary
+	{width:69%; }
+.home #secondary,
+.category-logotexnes #secondary,
+.category-xenoi #secondary, 
+.category-musica #secondary,
+.category-music #secondary,
+.category-genikes #secondary,
+.category-keimena #secondary,
+.category-stoixeia #secondary,
+.category-astronomy #secondary,
+.category-classic #secondary,
+.search #secondary
+	{width:29%; }
+}
+
+@media all and (min-width:769px) and (max-width:1024px)
+{ 
+.home #primary,
+.category-logotexnes #primary,
+.category-xenoi #primary, 
+.category-musica #primary,
+.category-music #primary,
+.category-genikes #primary,	
+.category-keimena #primary,
+.category-stoixeia #primary,
+.category-astronomy #primary,
+.category-classic #primary,
+.search #primary
+	{width:65%; }
+.home #secondary,
+.category-logotexnes #secondary,
+.category-xenoi #secondary, 
+.category-musica #secondary,
+.category-music #secondary,
+.category-genikes #secondary,
+.category-keimena #secondary,
+.category-stoixeia #secondary,
+.category-astronomy #secondary,
+.category-classic #secondary,
+.search #secondary
+	{width:35%; }
+}
+
+/* Δημοφιλη άρθρα small tablet */
+@media all and (max-width:768px) and (min-width:426px) {
+	
+.wpp-list li {
+    overflow: hidden;
+    float: left;
+    clear: none;
+    width: 30%;
+    margin: .5%;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px dotted #9996;
+	  padding: 5px 2px; 
+	}
+	.popular-posts { clear:both; }	
+}
+@media all and (max-width:425px){
+
+	.wpp-list { margin-left:0; }
+	.wpp-list li {
+    overflow: hidden;
+    float: left;
+    clear: none;
+    width: 49%;
+    margin: .5%;
+    height: 61px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px dotted #9996;
+	  padding: 1px; 
+	}
+	.wpp-post-title { font-size: 12px; }
+	.popular-posts { clear:both; }	
+}
+
+/* Search */
+.np-header-search-wrapper .search-form-main .search-submit {
+	font-size:10px;
+}
+
+.np-header-search-wrapper .search-form-main {
+	width:280px;
+}
+
+
+.read-more 
+{ display:none; }
+.np-article-thumb 
+{ width:25%;}
+
+div.pdfemb-viewer {  margin:auto !important; }
+
+.single .category-music .np-article-thumb 
+{ display:none;}
+
+.single .category-musica .np-article-thumb 
+{ display:none;}
+
+.single .category-stoixeia .np-article-thumb
+{ display:none;}
+
+.single .category-genikes .np-article-thumb
+{ display:none;}
+
+.single .category-classic .np-article-thumb 
+{ display:none;}
+
+.home .category-logotexnes .np-article-thumb, .home .category-xenoi .np-article-thumb  { max-width:120px; max-height:130px; overflow:hidden}
+
+/* Διορθωση μεγέθους εικόνας στις κατηγορίες αρθρων */ 
+.archive .category-logotexnes .np-article-thumb, 
+.archive .category-xenoi .np-article-thumb, 
+.archive .category-astronomy .np-article-thumb,
+.archive .category-music .np-article-thumb,
+.archive .category-musica .np-article-thumb,
+.archive .category-genikes .np-article-thumb,
+.archive .category-syllogika .np-article-thumb,
+.archive .category-stoixeia .np-article-thumb
+.archive .category-classic .np-article-thumb
+{ max-width:120px; max-height:120px; overflow:hidden}
+
+/* Διορθωση μεγέθους εικόνας στην αναζήτηση αρθρων */ 
+.search .category-logotexnes .np-article-thumb, 
+.search .category-xenoi .np-article-thumb, 
+.search .category-astronomy .np-article-thumb,
+.search .category-music .np-article-thumb,
+.search .category-musica .np-article-thumb,
+.search .category-syllogika .np-article-thumb,
+.search .category-genikes .np-article-thumb,
+.search .category-stoixeia .np-article-thumb
+.search .category-classic .np-article-thumb
+{ max-width:120px; max-height:120px; overflow:hidden}
+
+
+.index-2t, .index-2t p 
+	{display: contents; }
+
+/* Οχι Capitalize στο μενου */ 
+#site-navigation ul li a,
+h1.entry-title
+{ text-transform:initial;
+}
+
+/* Χρώματα στις κατηγορίες */
+/*** Ξένοι */
+.category-button.np-cat-2619 a
+{background:#00662c;}
+/*** Κείμενα */
+.category-button.np-cat-3059 a
+{background:#00448c;}
+/*** Λογοτέχνες */
+.category-button.np-cat-5 a
+{background:#00a9e0;}
+/*** Μουσική */
+.category-button.np-cat-12180 a
+{background:#11ad1e;}
+/*** Music */
+.category-button.np-cat-11874 a
+{background:#f47b23;}
+/*** Astronomy */
+.category-button.np-cat-11880 a
+{background:#0a246e;}
+/*** Genikes */
+.category-button.np-cat-12162 a
+{background:#004161;}
+
+
+
+
+
+/* Μην τα σβήσεις, κάνω κάτι τεστ. 
+.jetpack-video-wrapper { 
+	position:fixed;
+}
+
+.category-music div.entry-content p:first-of-type  {
+	margin-top:400px;
+}
+
+*/
