@@ -101,7 +101,14 @@
     .category-astronomy #secondary,
     .category-classic #secondary,
     .search #secondary
-    	{ width:34%; }
+    	{ width:34%; } 
+
+    .relpost-block-single 
+        { flex-basis: 48%; }
+    .ul2020 li 
+        { max-width:18% !important;}
+    .wpp-list 
+        { margin-left:0; }
 
     /* Popular posts */
     .wpp-list li 
@@ -109,13 +116,16 @@
     .popular-posts 
         { clear:both; }	
     #site-navigation ul li a 
-    { padding: 0px 5px; font-size: 90%; }    
+        { padding: 0px 5px; font-size: 90%; }    
 
     /* image thumbnails */
     .home .np-article-thumb  
         { height: 100px !important; width: 100px !important; float: none;} 
     .home .np-article-thumb img  
         { height:auto !important; width:auto !important; float: left;} 
+    .home .np-archive-post-content-wrapper
+		{ padding: 8px 4px 0 8px; float: none !important; width: calc(100% - 0px); box-shadow: 0 0 2px #ddd; z-index:-1; }
+
 }
 
 /* Screen width below 599px */
