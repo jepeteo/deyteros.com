@@ -76,8 +76,9 @@
         { height:auto !important; width:auto !important; float: left;} 
 }
 
-/* Screen width between 600 - 1023 px */
-@media all and (min-width:600px) and (max-width:1023px) {
+/* Screen width between 900 - 1023 px */
+@media all and (min-width:900px) and (max-width:1023px) {
+	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
     .home #primary,
     .category-logotexnes #primary,
     .category-xenoi #primary, 
@@ -89,7 +90,7 @@
     .category-astronomy #primary,
     .category-classic #primary,
     .search #primary
-    	{ width:64%; }
+    	{ width:64%; float:left; }
     .home #secondary,
     .category-logotexnes #secondary,
     .category-xenoi #secondary, 
@@ -101,7 +102,7 @@
     .category-astronomy #secondary,
     .category-classic #secondary,
     .search #secondary
-    	{ width:34%; } 
+    	{ width:34%; float:right; } 
 
     .relpost-block-single 
         { flex-basis: 48%; }
@@ -110,11 +111,11 @@
     .wpp-list 
         { margin-left:0; }
 
-    /* Popular posts */
+    /* Popular posts
     .wpp-list li 
-        { overflow: hidden; float: left; clear: none; width: 30%; margin: .5%; height: 50px; font-size: 12px; text-align: center; border: 1px dotted #9996; padding: 5px 2px; }
+        { overflow: hidden; float: left; clear: none; width: 99%; margin: .5%; height: 50px; font-size: 12px; text-align: center; border: 1px dotted #9996; padding: 5px 2px; }
     .popular-posts 
-        { clear:both; }	
+        { clear:both; }	*/
     #site-navigation ul li a 
         { padding: 0px 5px; font-size: 90%; }    
 
@@ -128,9 +129,64 @@
 
 }
 
-/* Screen width below 599px */
-@media all and (max-width:599px) {
-    /* Related Post thmbnails 2 items per row for mobile*/
+/* Screen width between 451 - 899 px */
+@media all and (min-width:451px) and (max-width:899px) {
+	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
+    .home #primary,
+    .category-logotexnes #primary,
+    .category-xenoi #primary, 
+    .category-musica #primary,
+    .category-music #primary,
+    .category-genikes #primary,	
+    .category-keimena #primary,
+    .category-stoixeia #primary,
+    .category-astronomy #primary,
+    .category-classic #primary,
+    .search #primary
+    	{ width:99%; float:left; }
+    .home #secondary,
+    .category-logotexnes #secondary,
+    .category-xenoi #secondary, 
+    .category-musica #secondary,
+    .category-music #secondary,
+    .category-genikes #secondary,
+    .category-keimena #secondary,
+    .category-stoixeia #secondary,
+    .category-astronomy #secondary,
+    .category-classic #secondary,
+    .search #secondary
+    	{ width:99%; float:right; } 
+
+    .relpost-block-single 
+        { flex-basis: 48%; }
+    .ul2020 li 
+        { max-width:18% !important;}
+    .wpp-list 
+        { margin-left:0; }
+
+    /* Popular posts */
+	.wpp-list li 
+        { overflow: hidden; float: left; clear: none; width: 31%; margin: .5%; height: 50px; font-size: 12px; text-align: center; border: 1px dotted #9996; padding: 5px 2px; }
+    .popular-posts 
+        { clear:both; }	
+    #site-navigation ul li a 
+        { padding: 0px 5px; font-size: 90%; }    
+
+    /* image thumbnails */
+    .home .np-article-thumb  
+        { height: 100px !important; width: 100px !important; float: none;} 
+    .home .np-article-thumb img  
+        { height:auto !important; width:auto !important; float: left;} 
+    .home .np-archive-post-content-wrapper
+		{ padding: 8px 4px 0 8px; float: none !important; width: calc(100% - 0px); box-shadow: 0 0 2px #ddd; z-index:-1; }
+	
+}
+
+
+/* Screen width below 450px */
+@media all and (max-width:450px) {
+	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
+	/* Related Post thmbnails 2 items per row for mobile*/
 	.relpost-block-single 
         { flex-basis: 48%; }
     .ul2020 li 
@@ -152,6 +208,9 @@
         { height: 100px !important; width: 100px !important; float: none;} 
     .home article   
         { margin:1%;} 
+
+    .news_portal_lite_featured_slider .featured-posts .np-single-post-wrap 
+        { width: 100%; }
 
 }
 
@@ -179,7 +238,7 @@
 /* New Index Categories layout */ 
 .ul2020 {  list-style-type:none;   display:flex;  margin:1%;  flex-wrap: wrap;   flex-direction: row; } 
 .ul2020>*{   flex: 1 1 100px; } 
-.ul2020 li {  text-align:center; margin:1%;  max-width:10.5%; } 
+.ul2020 li {  text-align:center; margin:1%;  max-width:9%; } 
 .ul2020 img {   box-shadow: 0 0 8px #0003;  margin-bottom: 10px;  transition:all 0.25s ease-in-out; } 
 .ul2020 img:hover {   box-shadow: 0 0 3px #0003;  transition:all 0.25s ease-in-out; } 
 
