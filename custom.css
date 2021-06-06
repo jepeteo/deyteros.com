@@ -78,7 +78,6 @@
 
 /* Screen width between 900 - 1023 px */
 @media all and (min-width:900px) and (max-width:1023px) {
-	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
     .home #primary,
     .category-logotexnes #primary,
     .category-xenoi #primary, 
@@ -131,7 +130,6 @@
 
 /* Screen width between 451 - 899 px */
 @media all and (min-width:451px) and (max-width:899px) {
-	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
     .home #primary,
     .category-logotexnes #primary,
     .category-xenoi #primary, 
@@ -185,7 +183,9 @@
 
 /* Screen width below 450px */
 @media all and (max-width:450px) {
-	#main article:nth-last-child(-n+55) {display:none;} /* display less articles on tablet and mobile devices */
+	/* #main article:nth-last-child(-n+55) {display:none;} */
+    /* display less articles on tablet and mobile devices  */
+    
 	/* Related Post thmbnails 2 items per row for mobile*/
 	.relpost-block-single 
         { flex-basis: 48%; }
