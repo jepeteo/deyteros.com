@@ -1,5 +1,10 @@
 /* Custom CSS by T. Mentis*/
 /**************************/
+/* display less articles on tablet and mobile devices */
+@media all and (max-width:960px) {
+	.home article:nth-last-child(-n+51) 
+	{display:none;} 
+}
 
 /* Screen min-width: 1280px */
 @media all and (min-width:1280px) {
@@ -183,9 +188,6 @@
 
 /* Screen width below 450px */
 @media all and (max-width:450px) {
-	/* #main article:nth-last-child(-n+55) {display:none;} */
-    /* display less articles on tablet and mobile devices  */
-    
 	/* Related Post thmbnails 2 items per row for mobile*/
 	.relpost-block-single 
         { flex-basis: 48%; }
