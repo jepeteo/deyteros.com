@@ -1,9 +1,27 @@
 /* Custom CSS by T. Mentis*/
 /**************************/
+/* Disable bottom image arrow from category 2021 */
+.category-12747 .np-archive-post-content-wrapper:before
+	{
+	border:none;
+}
+
 /* display less articles on tablet and mobile devices */
-@media all and (max-width:960px) {
-	.home article:nth-last-child(-n+51) 
+@media screen and (max-width:1280px) {
+	.home article:nth-last-child(-n+67) 
 	{display:none;} 
+}
+
+@media all and (max-width:960px) {
+	.home article:nth-last-child(-n+67) 
+	{display:none;} 
+}
+
+/* fix for ekdotikoi-oikoi links too close for mobile devices. */
+@media all and (max-width:960px) {
+	.postid-514 .b3 li {
+		padding:5px 0;
+	}
 }
 
 /* Screen min-width: 1280px */
